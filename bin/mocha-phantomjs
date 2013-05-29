@@ -86,7 +86,7 @@ var config = JSON.stringify({
   viewportSize: program.view,
   useColors: program.color
 });
-var spawnArgs = [script, page, reporter, config];
+var spawnArgs = ['--ignore-ssl-errors=true', script, page, reporter, config];
 
 var phantomjs;
 if (program.path !== undefined) {
